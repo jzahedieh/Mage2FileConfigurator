@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../Magento/Config/etc/system_file.xsd">
+    <system>
+        <section id="dev">
+            <group id="jzahedieh_fileconfigurator" translate="label" type="text" sortOrder="260" showInDefault="1" showInWebsite="0" showInStore="0">
+                <label>File Configurator</label>
+                <field id="active" translate="label" type="select" sortOrder="10" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Active</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <field id="system_path" translate="label" type="text" sortOrder="20" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>System Path</label>
+                    <comment><![CDATA[
+                        Folder location of where the YAML configuration files are located.
+                        ###MAGE_BASE### Magento project, eg /var/www/mage2/
+                    ]]></comment>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>

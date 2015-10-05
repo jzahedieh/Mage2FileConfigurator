@@ -1,0 +1,5 @@
+config:
+  - scope_id: 0
+    default/dev/jzahedieh_fileconfigurator/example: "Example for default scope"
+  - scope_id: 1
+    websites/dev/jzahedieh_fileconfigurator/example: "Example for website 1"

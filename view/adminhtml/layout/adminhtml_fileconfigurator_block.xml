@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../../../../lib/internal/Magento/Framework/View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceBlock name="adminhtml.fileconfigurator.container">
+            <block class="Magento\Backend\Block\Widget\Grid" name="adminhtml.fileconfigurator.container.grid" as="grid">
+                <arguments>
+                    <argument name="id" xsi:type="string">fileConfiguratorGrid</argument>
+                    <argument name="dataSource" xsi:type="object">JZahedieh\FileConfigurator\Model\Resource\Config\Collection</argument>
+                    <argument name="default_dir" xsi:type="string">DESC</argument>
+                    <argument name="default_sort" xsi:type="string">id</argument>
+                    <argument name="save_parameters_in_session" xsi:type="string">1</argument>
+                </arguments>
+                <block class="Magento\Backend\Block\Widget\Grid\ColumnSet" name="adminhtml.notification.container.grid.columnSet" as="grid.columnSet">
+                    <block class="Magento\Backend\Block\Widget\Grid\Column" as="id">
+                        <arguments>
+                            <argument name="header" xsi:type="string" translate="true">ID</argument>
+                            <argument name="index" xsi:type="string">id</argument>
+                        </arguments>
+                    </block>
+                    <block class="Magento\Backend\Block\Widget\Grid\Column" as="scope_type">
+                        <arguments>
+                            <argument name="header" xsi:type="string" translate="true">Scope Type</argument>
+                            <argument name="index" xsi:type="string">scope_type</argument>
+                        </arguments>
+                    </block>
+                    <block class="Magento\Backend\Block\Widget\Grid\Column" as="scope">
+                        <arguments>
+                            <argument name="header" xsi:type="string" translate="true">Scope</argument>
+                            <argument name="index" xsi:type="string">scope</argument>
+                        </arguments>
+                    </block>
+                    <block class="Magento\Backend\Block\Widget\Grid\Column" as="path">
+                        <arguments>
+                            <argument name="header" xsi:type="string" translate="true">Path</argument>
+                            <argument name="index" xsi:type="string">path</argument>
+                        </arguments>
+                    </block>
+                    <block class="Magento\Backend\Block\Widget\Grid\Column" as="value">
+                        <arguments>
+                            <argument name="header" xsi:type="string" translate="true">Value</argument>
+                            <argument name="index" xsi:type="string">value</argument>
+                        </arguments>
+                    </block>
+                </block>
+            </block>
+        </referenceBlock>
+    </body>
+</page>
