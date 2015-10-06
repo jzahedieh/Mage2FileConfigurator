@@ -7,6 +7,7 @@
         "magento/module-backend": "1.0.0-beta",
         "magento/framework": "1.0.0-beta",
         "symfony/yaml": "~2.1",
+        "symfony/finder": "~2.2",
         "magento/magento-composer-installer": "*"
     },
     "type": "magento2-module",

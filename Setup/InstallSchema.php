@@ -37,11 +37,11 @@ class InstallSchema implements InstallSchemaInterface
             ['unsigned' => true, 'nullable' => false, 'default' => 'default'],
             'Scope Type'
         )->addColumn(
-            'scope',
+            'scope_id',
             \Magento\Framework\DB\Ddl\Table::TYPE_INTEGER,
             null,
             ['nullable' => false],
-            'Scope'
+            'Scope Id'
         )->addColumn(
             'path',
             \Magento\Framework\DB\Ddl\Table::TYPE_TEXT,

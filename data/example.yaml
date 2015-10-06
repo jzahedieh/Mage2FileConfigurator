@@ -3,3 +3,8 @@ config:
     default/dev/jzahedieh_fileconfigurator/example: "Example for default scope"
   - scope_id: 1
     websites/dev/jzahedieh_fileconfigurator/example: "Example for website 1"
+config_encrypted:
+  - scope_id: 0
+    default/dev/jzahedieh_fileconfigurator/encrypted_example: "Encrypted example for default scope"
+  - scope_id: 1
+    websites/dev/jzahedieh_fileconfigurator/encrypted_example: "Encrypted example for website 1"

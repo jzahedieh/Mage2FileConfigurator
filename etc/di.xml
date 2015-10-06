@@ -3,7 +3,7 @@
     <type name="Magento\Framework\Console\CommandList">
         <arguments>
             <argument name="commands" xsi:type="array">
-                <item name="cronCommand" xsi:type="object">JZahedieh\FileConfigurator\Console\Run</item>
+                <item name="fileConfiguratorCommand" xsi:type="object">JZahedieh\FileConfigurator\Console\Run</item>
             </argument>
         </arguments>
     </type>

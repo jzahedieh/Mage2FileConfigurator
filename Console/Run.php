@@ -56,8 +56,8 @@ class Run extends Command
         $omParams[Store::CUSTOM_ENTRY_POINT_PARAM] = true;
         $objectManager = $this->objectManagerFactory->create($omParams);
 
-        /** @var \JZahedieh\FileConfigurator\Loader\Yaml $yamlLoader */
-        $yamlLoader = $objectManager->create('JZahedieh\FileConfigurator\Loader\Yaml');
+        /** @var \JZahedieh\FileConfigurator\Loader\YamlLoader $yamlLoader */
+        $yamlLoader = $objectManager->create('JZahedieh\FileConfigurator\Loader\YamlLoader');
         $yamlLoader->process();
 
         $output->writeln('<info>' . 'Finished.' . '</info>');
